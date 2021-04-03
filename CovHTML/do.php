@@ -25,7 +25,7 @@ if(IsInjected($visitor_email))
     exit;
 }
 
-$from = "digidoctorml@gmail.com"; // this is your Email address
+$from = "covFIT2021@gmail.com"; // this is your Email address
 $to = $_POST['email']; // this is the sender's Email address
 $first_name = $_POST['first_name'];
 $last_name = $_POST['last_name'];
@@ -56,13 +56,13 @@ $mail->SMTPAuth   = TRUE;
 $mail->SMTPSecure = "tls";
 $mail->Port       = 587;
 $mail->Host       = "tls://smtp.gmail.com";
-$mail->Username   = "digidoctorml@gmail.com";
-$mail->Password   = "DigiDoctor@123";
+$mail->Username   = "covFIT2021@gmail.com";
+$mail->Password   = "covFIT123";
 $mail->IsHTML(true);
 $mail->AddAddress($to, $first_name+" "+$last_name);
 $mail->AddAddress($from);
-$mail->SetFrom($from, "DigiDoctor");
-$mail->AddReplyTo($from, "DigiDoctor");
+$mail->SetFrom($from, "CovFIT");
+$mail->AddReplyTo($from, "CovFIT");
 $mail->Subject = $subject2;
 $mail->Body = $message2;
 
@@ -71,7 +71,7 @@ $mail->Send();
 
 
 // echo "Mail Sent. Thank you " . $first_name . ", we will contact you shortly.";
-// You can also use header('Location: thank_you.php'); to redirect to another page.
+//You can also use header('Location: thank_you.php'); to redirect to another page.
 
 function IsInjected($str)
 {
