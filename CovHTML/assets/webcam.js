@@ -30,8 +30,8 @@ function draw() {
     fill(255);
     textSize(16);
     textAlign(CENTER);
-    text(label, width / 2, height - 20);
-    text(label2, width / 2, height - 4);
+    text("Position your face close to the camera.", width / 2, height - 23.5);
+    text("Results may flicker.", width / 2, height - 3.5);
 }
 
 function classifyVideo() {
