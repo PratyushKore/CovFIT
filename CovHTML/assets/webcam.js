@@ -1,5 +1,5 @@
 let classifier;
-let imageModelURL = '';
+let imageModelURL = 'https://teachablemachine.withgoogle.com/models/aPSpyFikQ/model.json';
 // let imageModelURL = 'https://api.github.com/repos/PratyushKore/MaskDetect/contents/ml5/'
 let video;
 let flippedVideo;

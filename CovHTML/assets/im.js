@@ -1,5 +1,5 @@
 let classifier;
-let imageModelURL = '';
+let imageModelURL = 'https://teachablemachine.withgoogle.com/models/aPSpyFikQ/model.json';
 // let imageModelURL = 'modeljson/model.json'
 let img;
 let label = "";
