@@ -6,12 +6,13 @@ let flippedVideo;
 let label = "";
 let label2 = "";
 
+
 function preload() {
     classifier = ml5.imageClassifier(imageModelURL);
 }
 
 function setup() {
-    var cnv = createCanvas(320, 280);
+    var cnv = createCanvas(320,280);
     var x = (windowWidth - width) / 2;
     var y = (windowHeight - height) / 4;
     cnv.position(x, y);
@@ -19,7 +20,7 @@ function setup() {
     video.size(320, 240);
     video.hide();
 
-    flippedVideo = ml5.flipImage(video)
+    flippedVideo = ml5.flipImage(cnv)
     classifyVideo();
 }
 
@@ -34,8 +35,9 @@ function draw() {
 }
 
 function classifyVideo() {
-    flippedVideo = ml5.flipImage(video)
+    flippedVideo = ml5.flipImage(video);
     classifier.classify(flippedVideo, gotResult);
+    flippedVideo.remove();
 }
 
 function gotResult(error, results) {
