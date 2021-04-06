@@ -1,7 +1,7 @@
 # CovFIT
 A website for mask detection.
 
-CovFIT is a software for mask detection in a website. It is a project for the Med-o-Vate 2021 Hackathon by Pratyush Kore and Saathvik Somujayabalan. It uses machine learning to classify images based on whether or not the person is wearing a mask.
+CovFIT is a software for mask detection in a website. It is a project for the Med-O-Vate 2021 Hackathon by Pratyush Kore and Saathvik Somujayabalan. It uses machine learning to classify images based on whether or not the person is wearing a mask.
 
 ## Installation
 
