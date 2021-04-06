@@ -11,7 +11,7 @@ Simply download and extract the folder. Go to the CovHTML subfolder and run any 
 
 You can double click on any of the .html files and open them in a browser window. This will open up the website. 
 
-You can also run any of the .html files in command prompt.
+You can also run any of the .html files in command prompt:
 
 ```bash
 cd GitHub\CovFIT_HTML\CovHTML\
@@ -20,7 +20,7 @@ C:\GitHub\CovFIT_HTML\CovHTML\>index.html
 ```
 
 ## Contributing
-Pull requests are not yet welcome. After the hackathon results are announced, pull requests will become enabled. For major changes, please open an issue first to discuss what you would like to change.
+Pull requests are not yet welcome. After the hackathon results are announced, pull requests will be welcomed. For major changes, please open an issue first to discuss what you would like to change.
 
 Please make sure to update tests as appropriate.
 
