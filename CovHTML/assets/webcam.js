@@ -37,7 +37,7 @@ function draw() {
 function classifyVideo() {
     flippedVideo = ml5.flipImage(video);
     classifier.classify(flippedVideo, gotResult);
-    flippedVideo.remove();
+//    flippedVideo.remove();
 }
 
 function gotResult(error, results) {
