@@ -15,7 +15,7 @@ You can also run any of the .html files in command prompt:
 
 ```bash
 cd GitHub\CovFIT\CovHTML\
-C:\GitHub\CovFIT\CovHTML\>index.html
+index.html
 
 ```
 
