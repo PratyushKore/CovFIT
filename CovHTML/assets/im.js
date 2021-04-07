@@ -34,9 +34,8 @@ function classifyVideo() {
 function gotResult(error, results) {
     
     if (error) {
-        console.error(error);
+        return;
     }
-    console.log(results[0]);
     label = results[0].label;
     if (Number.isInteger(label)) {
         classifyVideo();
