@@ -101,7 +101,19 @@ https://templatemo.com/tm-551-stand-blog
     display: none;
 }
 
-@media screen and (max-width:1400px) {
+@media screen and (max-width:1300px) {
+    .center5,
+    .center6,
+    .center2,
+    .center3,
+    .center4,
+    .center5,
+    .center6 {
+        visibility: hidden;
+    }
+}
+
+@media screen and (min-width:1750px) {
     .center5,
     .center6,
     .center2,

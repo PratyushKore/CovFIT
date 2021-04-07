@@ -32,7 +32,7 @@ function classifyVideo() {
 }
 
 function gotResult(error, results) {
-    
+    document.getElementById("sb").innerHTML = "Check out your results below!";
     if (error) {
         return;
     }
@@ -51,6 +51,5 @@ function gotResult(error, results) {
         document.getElementById("rem").style="color:green"
     }
     document.getElementById("diagp").innerHTML = label2;
-    classifyVideo();
 
 }
