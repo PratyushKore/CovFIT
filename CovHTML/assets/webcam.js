@@ -37,14 +37,13 @@ function draw() {
 function classifyVideo() {
     flippedVideo = ml5.flipImage(video);
     classifier.classify(flippedVideo, gotResult);
-//    flippedVideo.remove();
+    flippedVideo.remove();
 }
 
 function gotResult(error, results) {
     if (error) {
         return;
     }
-    console.log(results[0]);
     label = results[0].label;
     label2 = Math.ceil(results[0].confidence * 100) + "%"
     if (Number.isInteger(label)) {
