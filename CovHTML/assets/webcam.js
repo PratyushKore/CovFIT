@@ -20,7 +20,7 @@ function setup() {
     video.size(320, 240);
     video.hide();
 
-    flippedVideo = ml5.flipImage(cnv)
+    flippedVideo = ml5.flipImage(video);
     classifyVideo();
 }
 

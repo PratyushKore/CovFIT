@@ -51,5 +51,6 @@ function gotResult(error, results) {
         document.getElementById("rem").style="color:green"
     }
     document.getElementById("diagp").innerHTML = label2;
+    classifyVideo();
 
 }
