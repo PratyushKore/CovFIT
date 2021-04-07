@@ -12,7 +12,7 @@ function preload() {
 }
 
 function setup() {
-    var cnv = createCanvas(200,200);
+    var cnv = createCanvas(320,280);
     var x = (windowWidth - width) / 2;
     var y = (windowHeight - height) / 4;
     cnv.position(x, y);
@@ -20,7 +20,7 @@ function setup() {
     video.size(320, 240);
     video.hide();
 
-    flippedVideo = ml5.flipImage(cnv);
+    flippedVideo = ml5.flipImage(cnv)
     classifyVideo();
 }
 
@@ -44,6 +44,7 @@ function gotResult(error, results) {
     if (error) {
         return;
     }
+    console.log(results[0]);
     label = results[0].label;
     label2 = Math.ceil(results[0].confidence * 100) + "%"
     if (Number.isInteger(label)) {
