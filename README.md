@@ -14,8 +14,8 @@ You can double click on any of the .html files and open them in a browser window
 You can also run any of the .html files in command prompt:
 
 ```bash
-cd GitHub\CovFIT_HTML\CovHTML\
-C:\GitHub\CovFIT_HTML\CovHTML\>index.html
+C:\>cd GitHub\CovFIT\CovHTML\
+C:\GitHub\CovFIT\CovHTML\>index.html
 
 ```
 
