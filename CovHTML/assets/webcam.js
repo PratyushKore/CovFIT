@@ -12,7 +12,7 @@ function preload() {
 }
 
 function setup() {
-    var cnv = createCanvas(320,280);
+    var cnv = createCanvas(100,100);
     var x = (windowWidth - width) / 2;
     var y = (windowHeight - height) / 4;
     cnv.position(x, y);
@@ -20,7 +20,7 @@ function setup() {
     video.size(320, 240);
     video.hide();
 
-    flippedVideo = ml5.flipImage(video);
+    flippedVideo = ml5.flipImage(cnv);
     classifyVideo();
 }
 
